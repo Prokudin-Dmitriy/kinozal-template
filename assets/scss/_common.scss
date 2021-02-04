@@ -1,0 +1,11 @@
+html {
+  font-size: $font-size;
+  overflow-y: scroll;
+}
+body {
+  font-size: $font-size;
+  font-family: $font-main;
+}
+a {
+  color: $color-primary;
+}

@@ -1,0 +1,64 @@
+.navbar-inverse {
+  background-color: darken($color-dark, 4%);
+  margin-bottom: 0;
+
+  .navbar-nav {
+    > .active > a {
+      background-color: $color-primary-dark;
+    
+      &:hover,
+      &:focus {
+        background-color: $color-primary-light;
+      }
+    }
+
+    > li > a{
+      transition: background-color 0.5s;
+      @include sm-min {
+        border-radius: 4px;
+      }
+      @include sm {
+        text-align: center;
+      }
+
+      &:focus,
+      &:hover {
+        background-color: $color-primary;
+      }
+    }
+  } 
+}
+
+
+.navbar-left {
+  @include sm-min  {
+    > li {
+      padding: 5px 5px 5px 0;
+    }
+  }
+
+  @include sm {
+    margin-bottom: 0;
+  }
+}
+
+.navbar-right {
+  @include sm-min {
+    > li {
+      padding: 5px 0 5px 5px;
+    }
+  }
+
+  @include sm {
+    margin-top: 0;
+  }
+}
+
+.navbar-header {
+  text-align: center;
+}
+
+.navbar-toggle {
+  float: none;
+  margin-right: 0;
+}
