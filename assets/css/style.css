@@ -2,7 +2,7 @@
   text-shadow: 0 0 5px black, 0 0 20px black;
 }
 
-.header {
+.header, .main, .left-sidebar {
   margin-bottom: 79.99995px;
 }
 
@@ -36,6 +36,28 @@
 .navbar-toggle {
   float: none;
   margin-right: 0;
+}
+
+.panel {
+  background-color: #ebebeb;
+  margin-bottom: 30px;
+}
+
+.panel-info {
+  border: none;
+}
+
+.panel-info > .panel-heading {
+  color: #ffffff;
+  background-color: #df8a13;
+  border: none;
+  font-size: 1.2rem;
+  letter-spacing: 0.1em;
+}
+
+.panel-body {
+  border: 1px solid #dddddd;
+  border-radius: 0 0 4px 4px;
 }
 
 html {
@@ -72,6 +94,19 @@ a {
   color: #ffffff;
   font-size: 1.15rem;
   letter-spacing: 0.2em;
+}
+
+.left-sidebar .panel:last-of-type {
+  margin-bottom: 0;
+}
+
+.vertical-slider {
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.vertical-slider__image {
+  width: 100%;
 }
 
 @media (min-width: 576px) {
