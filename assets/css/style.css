@@ -65,6 +65,12 @@
   font-size: 0.875rem;
 }
 
+.thumbnail {
+  -webkit-transition: background-color 0.25s;
+  -o-transition: background-color 0.25s;
+  transition: background-color 0.25s;
+}
+
 html {
   font-size: 16px;
   overflow-y: scroll;
@@ -77,6 +83,11 @@ body {
 
 a {
   color: #165690;
+}
+
+a:hover, a:focus {
+  text-decoration: none;
+  color: #df8a13;
 }
 
 .header-logo {
@@ -134,6 +145,110 @@ a {
 
 .user-login__tabs .active a {
   color: #ffffff !important;
+}
+
+.site-news-item {
+  clear: both;
+  position: relative;
+}
+
+.site-news-item:not(:last-child) {
+  min-height: 85px;
+  margin-bottom: 15px;
+}
+
+.site-news-item:not(:last-child)::after {
+  content: "";
+  position: absolute;
+  width: calc(100% - 85px);
+  height: 1px;
+  background-color: #dddddd;
+  bottom: -5px;
+  right: 0;
+}
+
+.site-news-item:hover a {
+  color: #df8a13;
+}
+
+.site-news-item:hover .site-news-item__image {
+  border-color: #df8a13;
+  background-color: #df8a13;
+}
+
+.site-news-item__image {
+  float: left;
+  width: 75px;
+  margin: 0 10px 10px 0;
+}
+
+.site-news-item__title {
+  margin-bottom: 10px;
+}
+
+.site-news-item__title a {
+  -webkit-transition: color 0.25s;
+  -o-transition: color 0.25s;
+  transition: color 0.25s;
+  display: -webkit-box;
+  overflow: hidden;
+  height: 50px;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+}
+
+.site-news-item__date {
+  font-size: 0.8rem;
+  color: #909090;
+  text-align: right;
+}
+
+.top-films__body {
+  padding-right: 0;
+  padding-left: 0;
+}
+
+.top-films__list {
+  margin-bottom: 0;
+}
+
+.top-films__item {
+  background-color: transparent;
+  margin-left: -1px;
+  margin-right: -1px;
+  color: #165690 !important;
+  padding-right: 55px;
+}
+
+.top-films__item:first-child {
+  border-radius: 0;
+  border-top: none;
+}
+
+.top-films__item:last-child {
+  border-radius: 0;
+  border-bottom: none;
+}
+
+.top-films__item:hover, .top-films__item:focus {
+  border-color: #df8a13;
+  background-color: #df8a13 !important;
+  color: #ffffff !important;
+}
+
+.top-films__item:hover .badge, .top-films__item:focus .badge {
+  background-color: #232323;
+}
+
+.top-films__badge {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
+  right: 15px;
 }
 
 @media (min-width: 576px) {

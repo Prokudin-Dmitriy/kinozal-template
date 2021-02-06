@@ -8,4 +8,10 @@ body {
 }
 a {
   color: $color-primary;
+  
+  &:hover,
+  &:focus {
+    text-decoration: none;
+    color: $color-accent;
+  }
 }
