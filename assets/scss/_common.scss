@@ -2,10 +2,12 @@ html {
   font-size: $font-size;
   overflow-y: scroll;
 }
+
 body {
   font-size: $font-size;
   font-family: $font-main;
 }
+
 a {
   color: $color-primary;
   
@@ -13,5 +15,26 @@ a {
   &:focus {
     text-decoration: none;
     color: $color-accent;
+  }
+}
+
+section {
+  position: relative;
+  overflow: hidden;
+}
+
+h1 {
+  margin: 0;
+  font-family: $font-header;
+  font-size: 3rem;
+  margin-bottom: $gap * 3;
+  margin-top: -($gap / 2);
+
+  &::after {
+    width: 100%;
+    position: absolute;
+    margin: 0.85em 0 0 $gap;
+    content: "";
+    border-bottom: 3px solid $color-accent-border;
   }
 }

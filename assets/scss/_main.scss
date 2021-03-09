@@ -1,3 +1,52 @@
 .main {
   @extend %margin-bottom-lg;
+
+  .site-search {
+    margin-bottom: $gap * 3;
+  }
+
+  .user-login {
+    margin-bottom: $gap * 4;
+  }
+}
+
+.new-films {
+  &-row {
+    margin-right: -($gap / 2);
+    margin-left: -($gap / 2);
+    margin-bottom: -$gap;
+  }
+
+  &-item {
+    padding-left: $gap / 2;
+    padding-right: $gap / 2;
+    margin-bottom: $gap;
+
+    
+    &__image {
+      width: 100%;
+    }
+
+    &__title {
+      font-size: 1rem;
+      font-weight: bold;
+      text-align: center;
+      margin: 0;
+
+      transition: color 0.25s;
+    }
+    
+    &__thumbnail {
+      margin-bottom: 0;
+      transition: background-color 0.25s;
+
+      &:hover {
+        background-color: $color-accent;
+        
+        h3 {
+          color: $color-light;
+        }
+      }
+    }
+  }
 }

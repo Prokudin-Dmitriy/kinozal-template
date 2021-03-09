@@ -1,3 +1,4 @@
+// ХЭДЭР
 .navbar-inverse {
   background-color: darken($color-dark, 4%);
   margin-bottom: 0;
@@ -28,7 +29,6 @@
     }
   } 
 }
-
 
 .navbar-left {
   @include sm-min  {
@@ -63,6 +63,7 @@
   margin-right: 0;
 }
 
+// МЭЙН
 .panel {
   background-color: darken(#ffffff, 8%);
   margin-bottom: $gap * 2;
