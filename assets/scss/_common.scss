@@ -38,3 +38,26 @@ h1 {
     border-bottom: 3px solid $color-accent-border;
   }
 }
+
+h2 {
+  margin: $gap * 4 0 $gap * 3 $gap * 3;
+  font-family: $font-header;
+  font-size: 2.5rem;
+
+  &::before {
+    width: 30px;
+    position: absolute;
+    left: 0;
+    margin: 0.25em 0 0 0;
+    content: "";
+    border-top: 3px solid $color-accent-border;
+  }
+
+  &::after {
+    width: 100%;
+    position: absolute;
+    margin: 0.85em 0 0 $gap;
+    content: "";
+    border-bottom: 3px solid $color-accent-border;
+  }
+}

@@ -111,6 +111,29 @@ h1::after {
   border-bottom: 3px solid #f4c583;
 }
 
+h2 {
+  margin: 60px 0 45px 45px;
+  font-family: "PT Serif", serif;
+  font-size: 2.5rem;
+}
+
+h2::before {
+  width: 30px;
+  position: absolute;
+  left: 0;
+  margin: 0.25em 0 0 0;
+  content: "";
+  border-top: 3px solid #f4c583;
+}
+
+h2::after {
+  width: 100%;
+  position: absolute;
+  margin: 0.85em 0 0 15px;
+  content: "";
+  border-bottom: 3px solid #f4c583;
+}
+
 .header-logo {
   padding: 100px 0;
   background-color: #232323;
@@ -179,6 +202,47 @@ h1::after {
 }
 
 .new-films-item__thumbnail:hover h3 {
+  color: #ffffff;
+}
+
+.top-week-row {
+  margin-right: -7.5px;
+  margin-left: -7.5px;
+  margin-bottom: -15px;
+}
+
+.top-week-item {
+  padding-left: 7.5px;
+  padding-right: 7.5px;
+  margin-bottom: 15px;
+}
+
+.top-week-item__image {
+  width: 100%;
+}
+
+.top-week-item__title {
+  font-size: 1rem;
+  font-weight: bold;
+  text-align: center;
+  margin: 0;
+  -webkit-transition: color 0.25s;
+  -o-transition: color 0.25s;
+  transition: color 0.25s;
+}
+
+.top-week-item__thumbnail {
+  margin-bottom: 0;
+  -webkit-transition: background-color 0.25s;
+  -o-transition: background-color 0.25s;
+  transition: background-color 0.25s;
+}
+
+.top-week-item__thumbnail:hover {
+  background-color: #df8a13;
+}
+
+.top-week-item__thumbnail:hover h3 {
   color: #ffffff;
 }
 
