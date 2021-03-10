@@ -26,9 +26,17 @@ section {
 h1 {
   margin: 0;
   font-family: $font-header;
-  font-size: 3rem;
-  margin-bottom: $gap * 3;
-  margin-top: -($gap / 2);
+  
+  @include xs-min {
+    margin-bottom: $gap * 3;
+    margin-top: -($gap / 2);
+    font-size: 3rem;
+  }
+  
+  @include xs {
+    font-size: 2rem;
+    margin-bottom: $gap * 2;
+  }
 
   &::after {
     width: 100%;
@@ -40,9 +48,17 @@ h1 {
 }
 
 h2 {
-  margin: $gap * 4 0 $gap * 3 $gap * 3;
   font-family: $font-header;
-  font-size: 2.5rem;
+  
+  @include xs-min {
+    margin: $gap * 4 0 $gap * 3 $gap * 3;
+    font-size: 2.5rem;
+  }
+  
+  @include xs {
+    font-size: 1.75rem;
+    margin: $gap * 3 0 $gap * 2 $gap * 3;
+  }
 
   &::before {
     width: 30px;
