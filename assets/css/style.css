@@ -77,6 +77,10 @@
   border-bottom: none;
 }
 
+.well {
+  background-color: #f1f1f1;
+}
+
 html {
   font-size: 16px;
   overflow-y: scroll;

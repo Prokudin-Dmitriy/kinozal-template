@@ -1,23 +1,24 @@
-.film-info {
-
-  &__badge {
-    font-size: 0.8em;
-  }
-
-  &__description {
-    margin-bottom: 20px;
-    font-size: 1.2rem;
-    border: 1px solid $color-gray;
-    border-radius: 0 0 4px 4px;
-    padding: 19px;
-    background-color: darken($color-light, 5.5%);
-
-    &-wrapper {
-      margin-right: 15px;
-      white-space: nowrap;
-
-      &:last-child {
-        margin-right: 0;
+.film {
+  &-info {
+    &__badge {
+      font-size: 0.8em;
+    }
+  
+    &__description {
+      margin-bottom: 20px;
+      font-size: 1.2rem;
+      border: 1px solid $color-gray;
+      border-radius: 0 0 4px 4px;
+      padding: 19px;
+      background-color: darken($color-light, 5.5%);
+  
+      &-wrapper {
+        margin-right: 15px;
+        white-space: nowrap;
+  
+        &:last-child {
+          margin-right: 0;
+        }
       }
     }
   }
