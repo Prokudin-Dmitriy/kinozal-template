@@ -71,6 +71,12 @@
   transition: background-color 0.25s;
 }
 
+.embed-responsive {
+  border: 1px solid #dddddd;
+  border-radius: 4px 4px 0 0;
+  border-bottom: none;
+}
+
 html {
   font-size: 16px;
   overflow-y: scroll;
@@ -291,6 +297,28 @@ ul {
 
 .film-news-item__text {
   text-align: justify;
+}
+
+.film-info__badge {
+  font-size: 0.8em;
+}
+
+.film-info__description {
+  margin-bottom: 20px;
+  font-size: 1.2rem;
+  border: 1px solid #dddddd;
+  border-radius: 0 0 4px 4px;
+  padding: 19px;
+  background-color: #f1f1f1;
+}
+
+.film-info__description-wrapper {
+  margin-right: 15px;
+  white-space: nowrap;
+}
+
+.film-info__description-wrapper:last-child {
+  margin-right: 0;
 }
 
 .left-sidebar .panel:last-of-type {

@@ -96,3 +96,10 @@
 .thumbnail {
   transition: background-color 0.25s;
 }
+
+// MAIN-page
+.embed-responsive {
+  border: 1px solid $color-gray;
+  border-radius: 4px 4px 0 0;
+  border-bottom: none;
+}
