@@ -115,7 +115,11 @@
     &__thumbnail {
       margin-bottom: 0;
     }
-    
+
+    &__image {
+      width: 100%;
+    }
+
     &__button {
       float: right;
       margin-bottom: $gap * 2;
