@@ -246,6 +246,40 @@ h2::after {
   color: #ffffff;
 }
 
+.film-news-item a:first-child {
+  -webkit-transition: color 0.25s;
+  -o-transition: color 0.25s;
+  transition: color 0.25s;
+}
+
+.film-news-item:hover a:first-child {
+  color: #df8a13;
+}
+
+.film-news-item:hover .thumbnail {
+  background-color: #f0ad4f;
+}
+
+.film-news-item:hover .btn-warning {
+  background-color: #df8a13;
+}
+
+.film-news-item__thumbnail {
+  margin-bottom: 0;
+}
+
+.film-news-item__button {
+  float: right;
+  margin-bottom: 30px;
+  -webkit-transition: background-color 0.25s;
+  -o-transition: background-color 0.25s;
+  transition: background-color 0.25s;
+}
+
+.film-news-item__text {
+  text-align: justify;
+}
+
 .left-sidebar .panel:last-of-type {
   margin-bottom: 0;
 }

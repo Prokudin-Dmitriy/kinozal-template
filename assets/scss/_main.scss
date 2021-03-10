@@ -91,3 +91,39 @@
     }
   }
 }
+
+.film-news {
+  &-item {
+    a:first-child {
+      transition: color 0.25s;
+    }
+    
+    &:hover {
+      a:first-child {
+        color: $color-accent;
+      }
+
+      .thumbnail {
+        background-color: #f0ad4f;
+      }
+
+      .btn-warning {
+        background-color: $color-accent;
+      }
+    }
+    
+    &__thumbnail {
+      margin-bottom: 0;
+    }
+    
+    &__button {
+      float: right;
+      margin-bottom: $gap * 2;
+      transition: background-color 0.25s;
+    }
+
+    &__text {
+      text-align: justify;
+    }
+  }
+}
