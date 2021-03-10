@@ -1,0 +1,23 @@
+.footer {
+  padding-top: $gap * 3;
+  background-color: $color-dark;
+
+  &-top {
+    a {
+      color: #777777;
+
+      &:hover {
+        color: $color-light;
+      }
+    }
+  }
+  
+  &-bottom {
+    margin: $gap * 1.3333333 0;
+    text-align: center;
+
+    a {
+      color: white;
+    }
+  }
+}

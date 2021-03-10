@@ -134,6 +134,15 @@ h2::after {
   border-bottom: 3px solid #f4c583;
 }
 
+h4 {
+  color: #ffffff;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
 .header-logo {
   padding: 100px 0;
   background-color: #232323;
@@ -417,6 +426,28 @@ h2::after {
       -ms-transform: translateY(-50%);
           transform: translateY(-50%);
   right: 15px;
+}
+
+.footer {
+  padding-top: 45px;
+  background-color: #232323;
+}
+
+.footer-top a {
+  color: #777777;
+}
+
+.footer-top a:hover {
+  color: #ffffff;
+}
+
+.footer-bottom {
+  margin: 20.0px 0;
+  text-align: center;
+}
+
+.footer-bottom a {
+  color: white;
 }
 
 @media (min-width: 576px) {
