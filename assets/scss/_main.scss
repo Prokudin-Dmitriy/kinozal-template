@@ -21,27 +21,32 @@
     padding-left: $gap / 2;
     padding-right: $gap / 2;
     margin-bottom: $gap;
-
+    
     
     &__image {
       width: 100%;
     }
-
+    
     &__title {
       font-size: 1rem;
       font-weight: bold;
       text-align: center;
       margin: 0;
-
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      
       transition: color 0.25s;
     }
     
     &__thumbnail {
       margin-bottom: 0;
       transition: background-color 0.25s;
-
+      transition: border-color 0.25s;
+      
       &:hover {
         background-color: $color-accent;
+        border-color: $color-accent;
         
         h3 {
           color: $color-light;
@@ -57,32 +62,36 @@
     margin-left: -($gap / 2);
     margin-bottom: -$gap;
   }
-
+  
   &-item {
     padding-left: $gap / 2;
     padding-right: $gap / 2;
     margin-bottom: $gap;
 
-    
     &__image {
       width: 100%;
     }
-
+    
     &__title {
       font-size: 1rem;
       font-weight: bold;
       text-align: center;
       margin: 0;
-
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      
       transition: color 0.25s;
     }
     
     &__thumbnail {
       margin-bottom: 0;
       transition: background-color 0.25s;
-
+      transition: border-color 0.25s;
+      
       &:hover {
         background-color: $color-accent;
+        border-color: $color-accent;
         
         h3 {
           color: $color-light;

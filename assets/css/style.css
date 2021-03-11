@@ -146,6 +146,13 @@ h4 {
 ul {
   list-style-type: none;
   padding: 0;
+  overflow: hidden;
+}
+
+ul li {
+  overflow: hidden;
+  -o-text-overflow: ellipsis;
+     text-overflow: ellipsis;
 }
 
 .header-logo {
@@ -199,6 +206,10 @@ ul {
   font-weight: bold;
   text-align: center;
   margin: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  -o-text-overflow: ellipsis;
+     text-overflow: ellipsis;
   -webkit-transition: color 0.25s;
   -o-transition: color 0.25s;
   transition: color 0.25s;
@@ -209,10 +220,14 @@ ul {
   -webkit-transition: background-color 0.25s;
   -o-transition: background-color 0.25s;
   transition: background-color 0.25s;
+  -webkit-transition: border-color 0.25s;
+  -o-transition: border-color 0.25s;
+  transition: border-color 0.25s;
 }
 
 .new-films-item__thumbnail:hover {
   background-color: #df8a13;
+  border-color: #df8a13;
 }
 
 .new-films-item__thumbnail:hover h3 {
@@ -240,6 +255,10 @@ ul {
   font-weight: bold;
   text-align: center;
   margin: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  -o-text-overflow: ellipsis;
+     text-overflow: ellipsis;
   -webkit-transition: color 0.25s;
   -o-transition: color 0.25s;
   transition: color 0.25s;
@@ -250,10 +269,14 @@ ul {
   -webkit-transition: background-color 0.25s;
   -o-transition: background-color 0.25s;
   transition: background-color 0.25s;
+  -webkit-transition: border-color 0.25s;
+  -o-transition: border-color 0.25s;
+  transition: border-color 0.25s;
 }
 
 .top-week-item__thumbnail:hover {
   background-color: #df8a13;
+  border-color: #df8a13;
 }
 
 .top-week-item__thumbnail:hover h3 {
